@@ -4,7 +4,7 @@ import { Link, NavLink } from 'react-router-dom';
 import logoS from '../../assets/images/logo-s.png';
 import logoSubtitle from '../../assets/images/logo_sub.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEnvelope, faHome, faUser } from '@fortawesome/free-solid-svg-icons';
+import { faEnvelope, faHome, faRectangleList, faRectangleTimes, faUser } from '@fortawesome/free-solid-svg-icons';
 import { faGithub, faLinkedin, faSkype, faYoutube } from '@fortawesome/free-brands-svg-icons';
 
 function Sidebar() {
@@ -23,6 +23,9 @@ function Sidebar() {
             </NavLink>
             <NavLink exact="true" activeclassname="active" to="/contact" className="contact-link">
                 <FontAwesomeIcon icon={faEnvelope} color="#4d4d42" />
+            </NavLink>
+            <NavLink exact="true" activeclassname="active" to="/portfolio" className="portfolio-link">
+                <FontAwesomeIcon icon={ faRectangleList } color="#4d4d42" />
             </NavLink>
         </nav>
         <ul>
