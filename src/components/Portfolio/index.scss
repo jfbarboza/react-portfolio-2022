@@ -1,0 +1,37 @@
+.projects-gallery{
+    position: absolute;
+    background-color: #000;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    top: 50px;
+    left: 30%;
+    z-index: 99999999;
+    width: 70%;
+    padding: 20px;
+    color: #fff;
+    font-family: 'Helvetica';
+    font-size: 17px;
+    font-weight: 300;
+    opacity: 0;
+    animation: fadeIn;
+    animation-fill-mode: forwards;
+
+    .project-item {
+        position: relative;
+        width: 100%;
+        display: block;
+
+    }
+
+    .project-item img{
+        width: 100%;
+    }
+
+    span{
+        font-size: 16px;
+        display: block;
+        padding-top: 20px;
+        color: #ffd700;
+    }
+}
